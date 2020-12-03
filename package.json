@@ -8,6 +8,10 @@
     "cli": "cross-env NODE_ENV=development DOTENV_CONFIG_PATH=api/.env ts-node -r dotenv/config --script-mode --transpile-only api/src/cli/index.ts",
     "postinstall": "npm run build"
   },
+  "scripts": {
+  "build": "npx directus start",
+  "start": "npx directus start"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/directus/directus.git"
